@@ -9,10 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+        
+      }
     },
+    backgroundImage: {
+      'mainground': 'linear-gradient(291deg, rgba(185,190,203,1) 0%, rgba(238,239,241,1) 91%)',
+    },
+    fontFamily: {
+      'Montserrat': ["Montserrat", 'sans-serif']
+    }
   },
   plugins: [],
 };
