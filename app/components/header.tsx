@@ -14,7 +14,7 @@ function Header() {
 
 
   return (
-    <div className='bg-mainground border border-b-[#ADB2BE] h-28 flex flew-row'>
+    <div className='bg-mainground border border-b-[#ADB2BE] h-28 w-screen flex flew-row fixed top-0 z-50 '>
         <div className="basis-4/12 flex flex-row items-center container">
             <div className="basis-1/2 flex flex-row items-center justify-end h-12">
                 <Image
@@ -30,7 +30,7 @@ function Header() {
                 className="h-12 ml-16 basis-1/2 rounded outline-none text-start placeholder:text-base"
                 placeholder="Search..."
             />
-            <button className='h-12 w-20 rounded bg-mainorange'>
+            <button className='h-12 w-20 rounded-tr-md rounded-br-md rounded-bl-md" bg-mainorange'>
                 <Image
                     className='m-auto'
                     src="/iconsearch/iconsearch.png"
