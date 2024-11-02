@@ -1,20 +1,23 @@
 'use client';
-
 import React from 'react'
 import Image from 'next/image'
+import CustomButton from '../CustomButton';
+
+import { Inter } from 'next/font/google'
+
+const inter = Inter({
+    subsets: ['latin'],
+    display: 'swap',
+})
 
 
-function Header() {
-    let clickSignUp = () => {
-        alert('Sign Up')
+function NavBar() {
+    let headClick = () => {
+        console.log('Sign Up')
     }
-    let clickSignIn = () => {
-        alert('Sign In')
-    }
-
 
   return (
-    <div className='bg-mainground border border-b-[#ADB2BE] h-28 w-screen flex flew-row fixed top-0 z-50 '>
+    <header className='bg-mainground border border-b-[#ADB2BE] h-fit w-screen flex flew-row fixed top-0 z-50 p-6'>
         <div className="basis-4/12 flex flex-row items-center container">
             <div className="basis-1/2 flex flex-row items-center justify-end h-12">
                 <Image
@@ -27,36 +30,37 @@ function Header() {
             </div>
             <input
                 type="search"
-                className="h-12 ml-16 basis-1/2 rounded outline-none text-start placeholder:text-base"
+                className={`${inter.className} h-12 ml-16 basis-1/2 rounded-l outline-none text-start placeholder:text-base p-4 border`}
                 placeholder="Search..."
             />
-            <button className='h-12 w-20 rounded-tr-md rounded-br-md rounded-bl-md" bg-mainorange'>
+            <button className='h-12 w-20 bg-mainorange rounded-r'>
                 <Image
-                    className='m-auto'
-                    src="/iconsearch/iconsearch.png"
-                    width={18}
-                    height={18}
-                    alt="Picture of the author"
+                className='m-auto'
+                src="/icons/iconsearch.png"
+                width={18}
+                height={18}
+                alt="Picture of the author"
                 />
             </button>
         </div>
-        <div className='basis-6/12 flex flex-row justify-center items-center space-x-8'>
+        <div className={`${inter.className} basis-6/12 flex flex-row justify-center items-center space-x-8`}>
             <div className='text-center font-Inter text-base text-[#5F6062] hover:text-[#010001] hover:border-b-2 border-b-[#FF492C]'>Lorem Ipsum</div>
             <div className='text-center font-Inter text-base text-[#5F6062] hover:text-[#010001] hover:border-b-2 border-b-[#FF492C]'>Lorem Ipsum</div>
             <div className='text-center font-Inter text-base text-[#5F6062] hover:text-[#010001] hover:border-b-2 border-b-[#FF492C]'>Lorem Ipsum</div>
             <div className='text-center font-Inter text-base text-[#5F6062] hover:text-[#010001] hover:border-b-2 border-b-[#FF492C]'>Lorem Ipsum</div>
         </div>
-        <div className='basis-2/12 flex flex-row items-center justify-start container'>
-            <button 
-            className='text-[#454FA5] rounded font-Inter text-base hover:bg-[#454FA5] hover:text-[#FFFFFF] h-12 w-28'
-            onClick={clickSignUp}
-            >Sign Up</button>
-            <button className='text-[#454FA5] rounded font-Inter text-base hover:bg-[#454FA5] hover:text-[#FFFFFF] h-12 w-28'
-            onClick={clickSignIn}
-            >Sign In</button>
+        <div className={`${inter.className} basis-2/12 flex flex-row items-center justify-start container`}>
+            <CustomButton 
+            title="Sign Up"
+            handleClick={headClick}
+            />
+            <CustomButton 
+            title="Sign In"
+            handleClick={headClick}
+            />
         </div>
-    </div>
+    </header>
   )
 }
 
-export default Header
+export default NavBar

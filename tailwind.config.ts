@@ -18,12 +18,6 @@ const config: Config = {
       'herobg': 'linear-gradient(177deg, #FF6C35 0%, #FF4F2D 84%, #FF492C 100%)'
     },
     fontFamily: {
-      'Montserrat': ["Montserrat", 'sans-serif'],
-      'Inter': ["Inter", 'sans-serif'],
-      'Josefin': ['"Josefin Sans"', 'sans-serif']
-    },
-    borderRadius: {
-      'heroborder': '40px',
     }
   },
   plugins: [],
