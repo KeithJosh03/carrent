@@ -1,14 +1,15 @@
-import { Hero, CarShow } from '@/components'
+import { Hero, CarShow , HomeLayout} from '@/components'
 
 
 import React from "react";
 
 
+
 export default function Home() {
   return (
-      <main>
-        <Hero />
-        <CarShow />
-      </main>
+    <HomeLayout>
+      <Hero />
+      <CarShow />
+    </HomeLayout>
   );
 }
