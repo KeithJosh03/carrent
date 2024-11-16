@@ -17,7 +17,7 @@ function NavBar() {
     }
 
   return (
-    <header className='bg-mainground border border-b-[#ADB2BE] h-fit w-screen flex flew-row fixed top-0 z-50 p-6'>
+    <nav className='bg-mainground border border-b-[#ADB2BE] h-fit w-screen flex flew-row fixed top-0 z-50 p-6'>
         <div className="basis-4/12 flex flex-row items-center container">
             <div className="basis-1/2 flex flex-row items-center justify-end h-12">
                 <Image
@@ -59,7 +59,7 @@ function NavBar() {
             handleClick={headClick}
             />
         </div>
-    </header>
+    </nav>
   )
 }
 
