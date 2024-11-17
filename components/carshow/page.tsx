@@ -1,15 +1,15 @@
 import React from 'react'
 
-import {Filter, inter , CarshowLayout } from './index';
+import { inter, CarshowLayout , Filter , Resultscar} from './index';
 
 
 function CarShow() {
   return (
     <CarshowLayout>
       <Filter InterFont={inter.className} />
+      <Resultscar InterFont={inter.className} />
     </CarshowLayout>
   )
 }
-{/* <Resultscar InterFont={inter.className} /> */}
 
 export default CarShow;
