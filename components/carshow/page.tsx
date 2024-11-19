@@ -7,7 +7,7 @@ function CarShow() {
   return (
     <CarshowLayout>
       <Filter InterFont={inter.className} />
-      <ResultCarsPage/>
+      <ResultCarsPage />
     </CarshowLayout>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 import { ResultCarLayout , ResultscarInput ,CarsCard } from '../index';
 
 function ResultCarsPage() {
