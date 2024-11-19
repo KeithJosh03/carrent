@@ -1,7 +1,18 @@
 
 import Filter from "./filter/filter";
-import Resultscar from "./result/resultscar";
 import { CarshowLayout } from "./layout";
+
+
+
+// result component
+import ResultCarsPage from "./result/page";
+
+import {ResultCarLayout}  from "./result/layout";
+import ResultscarInput from "./result/resultscar";
+import CarsCard from "./result/carsCard";
+
+
+
 
 
 import { Inter } from 'next/font/google'
@@ -17,8 +28,11 @@ const inter = Inter({
 
 export {
     Filter,
-    Resultscar,
+    ResultscarInput,
     CarshowLayout,
+    CarsCard,
+    ResultCarLayout,
+    ResultCarsPage,
     inter,
     Car
 }
