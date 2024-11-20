@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { inter, CarshowLayout , Filter , ResultCarsPage} from './index';
+import { CarshowLayout , Filter , ResultCarsPage} from './index';
 
 
 function CarShow() {
   return (
     <CarshowLayout>
-      <Filter InterFont={inter.className} />
+      <Filter  />
       <ResultCarsPage />
     </CarshowLayout>
   )
