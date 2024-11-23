@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import { Inter } from 'next/font/google'
 
+import { carrentlogo , facebook , insta , linken , twitter } from '@/public/footer'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -44,7 +45,7 @@ function Footer() {
             <Image 
             width={168}
             height={24}
-            src="/footer/carrentlogo.png" 
+            src={carrentlogo}
             alt="Picture of the author"
             />
           </div> 
@@ -56,7 +57,7 @@ function Footer() {
               <Image
               width={24}
               height={22}
-              src="/footer/facebook.png"
+              src={facebook}
               alt="facebooklogo"
               />
             </div>
@@ -64,7 +65,7 @@ function Footer() {
               <Image
               width={24}
               height={22}
-              src="/footer/twitter.png"
+              src={twitter}
               alt="facebooklogo"
               />
             </div>
@@ -72,7 +73,7 @@ function Footer() {
               <Image
               width={24}
               height={22}
-              src="/footer/insta.png"
+              src={insta}
               alt="facebooklogo"
               />
             </div>
@@ -80,7 +81,7 @@ function Footer() {
               <Image
               width={24}
               height={22}
-              src="/footer/linken.png"
+              src={linken}
               alt="facebooklogo"
               />
             </div>

@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import { Josefin_Sans, Inter } from 'next/font/google';
 
+import { iconsearch , contactcalendar} from '@/public/icons';
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],
@@ -53,7 +54,7 @@ function Hero() {
           <div className='self-center justify-center flex w-3/12'>
             <Image
             className='m-auto'
-            src="/icons/contactcalendar.png"
+            src={contactcalendar}
             width={18}
             height={18}
             alt="Picture of the author"
@@ -70,7 +71,7 @@ function Hero() {
           <div className='self-center justify-center flex w-3/12'>
             <Image
             className='m-auto'
-            src="/icons/contactcalendar.png"
+            src={contactcalendar}
             width={18}
             height={18}
             alt="Picture of the author"
@@ -81,7 +82,7 @@ function Hero() {
           <h1 className='m-auto'>Search</h1>  
           <Image
           className='m-auto'
-          src="/icons/iconsearch.png"
+          src={iconsearch}
           width={18}
           height={18}
           alt="Picture of the author"

@@ -3,12 +3,14 @@ import Image from 'next/image'
 
 import { inter } from '@/utils/font'
 
+import { sort } from '@/public/icons'
+
 function Filter() {
   return (
     <div className='w-2/12 h-fit border border-[#E0E0E0] flex flex-col'>
         <div className='p-6 border-b border-[#E0E0E0] flex flex-row items-center gap-4'>
         <Image
-        src="/icons/sort.png"
+        src={sort}
         width={28}
         height={28}
         alt="Picture of the author"

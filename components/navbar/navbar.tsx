@@ -5,6 +5,8 @@ import CustomButton from '../CustomButton';
 
 import { Inter } from 'next/font/google'
 
+import { iconsearch } from '@/public/icons';
+
 const inter = Inter({
     subsets: ['latin'],
     display: 'swap',
@@ -17,7 +19,7 @@ function NavBar() {
     }
 
   return (
-    <nav className='bg-mainground border border-b-[#ADB2BE] h-fit w-screen flex flew-row fixed top-0 z-50 p-6'>
+    <nav className='bg-mainground border border-b-[#ADB2BE] h-fit w-screen flex flew-row fixed top-0 z-50 p-5'>
         <div className="basis-4/12 flex flex-row items-center container">
             <div className="basis-1/2 flex flex-row items-center justify-end h-12">
                 <Image
@@ -36,7 +38,7 @@ function NavBar() {
             <button className='h-12 w-20 bg-mainorange rounded-r'>
                 <Image
                 className='m-auto'
-                src="/icons/iconsearch.png"
+                src={iconsearch}
                 width={18}
                 height={18}
                 alt="Picture of the author"

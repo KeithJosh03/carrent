@@ -3,6 +3,8 @@ import Image from 'next/image'
 
 import { inter } from '@/utils/font'
 
+import { downarrow } from '@/public/icons'
+
 function ResultscarInput() {
 
   return (
@@ -21,7 +23,7 @@ function ResultscarInput() {
         </div>
         <div className='flex w-3/12 self-center justify-center'>
           <Image
-          src="/icons/down-arrow.png"
+          src={downarrow}
           width={24}
           height={24}
           alt="Picture of the author"
@@ -37,7 +39,7 @@ function ResultscarInput() {
         </div>
         <div className='flex w-3/12 self-center justify-center'>
           <Image
-          src="/icons/down-arrow.png"
+          src={downarrow}
           width={24}
           height={24}
           alt="Picture of the author"
